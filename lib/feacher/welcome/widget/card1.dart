@@ -1,22 +1,10 @@
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Welcomescreen extends StatelessWidget {
-  const Welcomescreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    final hightscreen = MediaQuery.of(context).size.height;
-    final widthscreen = MediaQuery.of(context).size.width;
-    return Scaffold(
-      body: Card1(hightscreen: hightscreen, widthscreen: widthscreen,),
-    );
-  }
-}
-
 class Card1 extends StatelessWidget {
-  final widthscreen;
-  final hightscreen;
+  final double widthscreen;
+  final double hightscreen;
   const Card1({super.key, required this.widthscreen, required this.hightscreen,});
 
   @override
@@ -43,8 +31,8 @@ class Card1 extends StatelessWidget {
               ),
             
             Positioned(
-              top: 0,
-              right: 0,
+              top: 8,
+              right: 8,
               child: SizedBox(
                 width: widthscreen *0.55,
                 child: Column(

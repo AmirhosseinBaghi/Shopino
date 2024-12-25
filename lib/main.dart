@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shopino/feacher/welcomescreen.dart';
+import 'package:shopino/feacher/welcome/welcomescreen.dart';
 
 void main() {
   runApp(const MyApp());
