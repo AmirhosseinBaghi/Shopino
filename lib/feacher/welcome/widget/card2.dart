@@ -11,7 +11,7 @@ class Card2 extends StatelessWidget {
       padding: const EdgeInsets.only(left:8.0),
       child: SizedBox(
         width: screenwidth * 0.499,
-        height: 340,
+        height: screenhight * 0.4,
         child: ClipRRect(
           borderRadius: BorderRadius.only(
             topLeft: Radius.circular(28),
