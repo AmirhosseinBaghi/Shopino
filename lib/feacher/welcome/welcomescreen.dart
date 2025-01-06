@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:shopino/feacher/product/productscreen.dart';
 import 'package:shopino/feacher/welcome/widget/card1.dart';
 import 'package:shopino/feacher/welcome/widget/card2.dart';
 import 'package:shopino/feacher/welcome/widget/card3.dart';
@@ -79,7 +80,9 @@ class FrontWidget extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8.0),
                 child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => Productscreen(),));
+                    },
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.black,
                         foregroundColor: Colors.white,
